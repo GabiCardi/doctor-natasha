@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para o parágrafo */
+p {
+    font-size: 16px;
+    color: #666666;
+    display: flex; /* Exibe o parágrafo como um bloco inline */
+    vertical-align: top; /* Alinha o parágrafo ao topo da imagem */
+}
+
+.flex1{
+    flex: 1;
+}
+
