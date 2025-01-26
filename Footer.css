@@ -1,0 +1,139 @@
+/* Estilo principal do footer */
+.disclaimer-premium {
+  background: linear-gradient(to right, #0db69f, #353375);
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinha pelo topo */
+  flex-wrap: wrap;
+  border-top: 5px solid #ffffff;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+  gap: 20px; /* Espaço entre elementos */
+}
+
+/* Conteúdo textual do footer */
+.disclaimer-premium .text {
+  flex: 1;
+  color: #ffffff;
+  margin-bottom: 15px;
+  max-width: 45%;
+}
+
+/* Contêiner do mapa no footer */
+.disclaimer-premium .map-container {
+  flex: 1;
+  max-width: 45%;
+}
+
+.disclaimer-premium iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos e subtítulos do texto */
+.disclaimer-premium .disclaimer-premium__title {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Botão no footer */
+.disclaimer-premium button {
+  background-color: #ffffff;
+  color: #353375;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: 2px solid #353375;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.disclaimer-premium button:hover {
+  background-color: #353375;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-button {
+  z-index: 4;
+  position: fixed;
+  height: 56px;
+  width: 56px;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button img {
+  width: 56px;
+  height: 56px;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Botão flutuante do Instagram */
+.instagram-button {
+  z-index: 4;
+  position: fixed;
+  height: 56px;
+  width: 56px;
+  bottom: 80px;
+  right: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instagram-button img {
+  width: 56px;
+  height: 56px;
+}
+
+.instagram-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade do footer */
+@media (max-width: 768px) {
+  .disclaimer-premium {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .disclaimer-premium .text,
+  .disclaimer-premium .map-container {
+    max-width: 100%;
+  }
+
+  .disclaimer-premium iframe {
+    height: 200px;
+  }
+}
